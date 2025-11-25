@@ -5,23 +5,19 @@ body {
   color: #7a2c5f;
 }
 
-.titulo {
+.title {
   text-align: center;
+  margin-bottom: 20px;
   font-size: 32px;
-  margin-bottom: 25px;
+  color: #d14b9b;
+  font-weight: bold;
 }
 
 form {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
-}
-
-input {
-  flex: 1;
-  padding: 10px;
-  border-radius: 8px;
-  border: 2px solid #ffb6df;
+  justify-content: center;
 }
 
 button {
@@ -42,21 +38,25 @@ button:hover {
   background: white;
   padding: 12px;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 2px solid #ffc9e6;
+  align-items: center;
 }
 
-.btns button {
-  margin-left: 5px;
+.buttons {
+  display: flex;
+  gap: 6px; /* botones más juntos */
 }
 
-.edit {
-  background: #c26bff;
+.edit-btn {
+  background: #f1c40f; /* amarillo */
+  color: black;
 }
 
-.delete {
-  background: #ff5a7a;
+.delete-btn {
+  background: #e74c3c; /* rojo */
+  color: white;
 }
