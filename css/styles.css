@@ -5,10 +5,19 @@ body {
   color: #7a2c5f;
 }
 
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #d14b9b;
+  font-weight: bold;
+}
+
 form {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 button {
@@ -24,8 +33,24 @@ button {
   background: white;
   padding: 12px;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
   border: 2px solid #ffc9e6;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 6px; /* botones más juntos */
+}
+
+.edit-btn {
+  background: #f1c40f; /* amarillo */
+  color: black;
+}
+
+.delete-btn {
+  background: #e74c3c; /* rojo */
+  color: white;
 }
