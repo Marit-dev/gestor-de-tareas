@@ -7,7 +7,6 @@ document.getElementById("taskForm").addEventListener("submit", (e) => {
   if (!text) return;
 
   tasks.push({ id: Date.now(), text });
-
   localStorage.setItem("tasks", JSON.stringify(tasks));
 
   document.getElementById("taskForm").reset();
@@ -20,13 +19,13 @@ function renderTasks() {
 
   tasks.forEach(t => {
     const div = document.createElement("div");
-    div.className = "task-item";
 
     div.innerHTML = `
       <span>${t.text}</span>
-      <div class="btns">
-        <button class="edit" onclick="editTask(${t.id})">Editar</button>
-        <button class="delete" onclick="deleteTask(${t.id})">Eliminar</button>
+
+      <div class="buttons">
+        <button class="edit-btn" onclick="editTask(${t.id})">Editar</button>
+        <button class="delete-btn" onclick="deleteTask(${t.id})">Eliminar</button>
       </div>
     `;
 
