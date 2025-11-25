@@ -27,21 +27,15 @@ button {
   padding: 8px 14px;
   border-radius: 8px;
   cursor: pointer;
-  font-weight: bold;
 }
 
-button:hover {
-  background: #ff5ab7;
-}
-
-#taskList .task-item {
+#taskList div {
   background: white;
   padding: 12px;
   border-radius: 10px;
   margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   border: 2px solid #ffc9e6;
   align-items: center;
 }
