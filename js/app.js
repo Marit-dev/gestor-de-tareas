@@ -25,4 +25,16 @@ function renderTasks() {
   });
 }
 
+function editTask(id) {
+  const newText = prompt("Edita la tarea:");
+
+  tasks = tasks.map(t => 
+    t.id === id ? { ...t, text: newText } : t
+  );
+
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+  renderTasks();
+}
+
+
 renderTasks();
