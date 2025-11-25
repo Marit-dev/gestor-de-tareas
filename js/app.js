@@ -1,3 +1,5 @@
+
+
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
 document.getElementById("taskForm").addEventListener("submit", (e) => {
@@ -11,3 +13,16 @@ document.getElementById("taskForm").addEventListener("submit", (e) => {
 
   document.getElementById("taskForm").reset();
 });
+
+function renderTasks() {
+  const container = document.getElementById("taskList");
+  container.innerHTML = "";
+
+  tasks.forEach(t => {
+    const div = document.createElement("div");
+    div.textContent = t.text;
+    container.appendChild(div);
+  });
+}
+
+renderTasks();
