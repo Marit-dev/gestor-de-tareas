@@ -1,6 +1,29 @@
 
 
-div.innerHTML = `
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestor de Tareas</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+ <form id="taskForm">
+    <input id="taskInput" type="text" placeholder="Escribe una tarea" required>
+    <button>Agregar</button>
+  </form>
+
+
+  <script src="js/app.js">
+
+ div.innerHTML = `
   <span>${t.text}</span>
   <button onclick="editTask(${t.id})">Editar</button>
 `;
+
+  </script>
+</body>
+</html>
+
+
