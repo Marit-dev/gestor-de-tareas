@@ -9,20 +9,17 @@
 </head>
 <body>
 
- <form id="taskForm">
+  <h1 class="titulo">Gestor de Tareas</h1>
+
+  <form id="taskForm">
     <input id="taskInput" type="text" placeholder="Escribe una tarea" required>
     <button>Agregar</button>
   </form>
 
+  <!-- Contenedor de tareas -->
+  <div id="taskList"></div>
 
-  <script src="js/app.js">
-
- div.innerHTML = `
-  <span>${t.text}</span>
-  <button onclick="editTask(${t.id})">Editar</button>
-  <button onclick="deleteTask(${t.id})">Eliminar</button>
-`;
-  </script>
+  <script src="js/app.js"></script>
 </body>
 </html>
 
