@@ -5,10 +5,23 @@ body {
   color: #7a2c5f;
 }
 
+.titulo {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
 form {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #ffb6df;
 }
 
 button {
@@ -18,14 +31,32 @@ button {
   padding: 8px 14px;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: bold;
 }
 
-#taskList div {
+button:hover {
+  background: #ff5ab7;
+}
+
+#taskList .task-item {
   background: white;
   padding: 12px;
   border-radius: 10px;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 2px solid #ffc9e6;
+}
+
+.btns button {
+  margin-left: 5px;
+}
+
+.edit {
+  background: #c26bff;
+}
+
+.delete {
+  background: #ff5a7a;
 }
