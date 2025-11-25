@@ -1,5 +1,5 @@
-<<<<<<< Updated upstream
-=======
+
+
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
 document.getElementById("taskForm").addEventListener("submit", (e) => {
@@ -26,5 +26,3 @@ function renderTasks() {
 }
 
 renderTasks();
-
->>>>>>> Stashed changes
