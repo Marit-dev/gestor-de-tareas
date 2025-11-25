@@ -24,6 +24,12 @@ function renderTasks() {
     container.appendChild(div);
   });
 }
+function deleteTask(id) {
+  tasks = tasks.filter(t => t.id !== id);
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+  renderTasks();
+}
+
 
 function editTask(id) {
   const newText = prompt("Edita la tarea:");
